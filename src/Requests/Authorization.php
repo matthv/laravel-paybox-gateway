@@ -1,12 +1,12 @@
 <?php
 
-namespace Devpark\PayboxGateway\Requests;
+namespace Matthv\PayboxGateway\Requests;
 
 use Carbon\Carbon;
-use Devpark\PayboxGateway\Language;
-use Devpark\PayboxGateway\Services\Amount;
-use Devpark\PayboxGateway\Services\HmacHashGenerator;
-use Devpark\PayboxGateway\Services\ServerSelector;
+use Matthv\PayboxGateway\Language;
+use Matthv\PayboxGateway\Services\Amount;
+use Matthv\PayboxGateway\Services\HmacHashGenerator;
+use Matthv\PayboxGateway\Services\ServerSelector;
 use Illuminate\Contracts\Config\Repository as Config;
 use Illuminate\Contracts\View\Factory as ViewFactory;
 use Illuminate\Routing\Router;

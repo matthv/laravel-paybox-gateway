@@ -2,7 +2,7 @@
 
 namespace Tests\Requests;
 
-use Devpark\PayboxGateway\Requests\AuthorizationWithoutCapture;
+use Matthv\PayboxGateway\Requests\AuthorizationWithoutCapture;
 use Tests\UnitTestCase;
 use Tests\Helpers\Authorization as AuthorizationHelper;
 

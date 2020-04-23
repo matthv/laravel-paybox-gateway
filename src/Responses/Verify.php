@@ -1,12 +1,12 @@
 <?php
 
-namespace Devpark\PayboxGateway\Responses;
+namespace Matthv\PayboxGateway\Responses;
 
-use Devpark\PayboxGateway\ResponseCode;
-use Devpark\PayboxGateway\ResponseField;
-use Devpark\PayboxGateway\Responses\Exceptions\InvalidSignature;
-use Devpark\PayboxGateway\Services\Amount;
-use Devpark\PayboxGateway\Services\SignatureVerifier;
+use Matthv\PayboxGateway\ResponseCode;
+use Matthv\PayboxGateway\ResponseField;
+use Matthv\PayboxGateway\Responses\Exceptions\InvalidSignature;
+use Matthv\PayboxGateway\Services\Amount;
+use Matthv\PayboxGateway\Services\SignatureVerifier;
 use Exception;
 use Illuminate\Http\Request;
 

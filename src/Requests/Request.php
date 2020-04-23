@@ -1,12 +1,12 @@
 <?php
 
-namespace Devpark\PayboxGateway\Requests;
+namespace Matthv\PayboxGateway\Requests;
 
 use Carbon\Carbon;
-use Devpark\PayboxGateway\Currency;
-use Devpark\PayboxGateway\Services\ServerSelector;
+use Matthv\PayboxGateway\Currency;
+use Matthv\PayboxGateway\Services\ServerSelector;
 use Illuminate\Contracts\Config\Repository as Config;
-use Devpark\PayboxGateway\Services\Amount;
+use Matthv\PayboxGateway\Services\Amount;
 
 abstract class Request
 {

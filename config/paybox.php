@@ -23,7 +23,7 @@ return [
 
     /*
      * Password for Paybox back-office (It's required for Paybox direct - when you use
-     * capturing, otherwise it won't be used) 
+     * capturing, otherwise it won't be used)
      */
     'back_office_password' => env('PAYBOX_BACK_OFFICE_PASSWORD', ''),
 
@@ -33,31 +33,31 @@ return [
     'hmac_key' => env('PAYBOX_HMAC_KEY', ''),
 
     /*
-     * Paybox public key location - you can get it from 
+     * Paybox public key location - you can get it from
      * http://www1.paybox.com/wp-content/uploads/2014/03/pubkey.pem
      */
     'public_key' => storage_path('paybox/pubkey.pem'),
 
     /*
      * Default return fields when going back from Paybox. You can change here keys as you want,
-     * you can add also more values from ResponseField class     
+     * you can add also more values from ResponseField class
      */
     'return_fields' => [
-        'amount' => \Devpark\PayboxGateway\ResponseField::AMOUNT,
-        'authorization_number' => \Devpark\PayboxGateway\ResponseField::AUTHORIZATION_NUMBER,
-        'order_number' => \Devpark\PayboxGateway\ResponseField::ORDER_NUMBER,
-        'response_code' => \Devpark\PayboxGateway\ResponseField::RESPONSE_CODE,
-        'payment_type' => \Devpark\PayboxGateway\ResponseField::PAYMENT_TYPE,
-        'call_number' => \Devpark\PayboxGateway\ResponseField::PAYBOX_CALL_NUMBER,
-        'transaction_number' => \Devpark\PayboxGateway\ResponseField::TRANSACTION_NUMBER,
+        'amount' => \Matthv\PayboxGateway\ResponseField::AMOUNT,
+        'authorization_number' => \Matthv\PayboxGateway\ResponseField::AUTHORIZATION_NUMBER,
+        'order_number' => \Matthv\PayboxGateway\ResponseField::ORDER_NUMBER,
+        'response_code' => \Matthv\PayboxGateway\ResponseField::RESPONSE_CODE,
+        'payment_type' => \Matthv\PayboxGateway\ResponseField::PAYMENT_TYPE,
+        'call_number' => \Matthv\PayboxGateway\ResponseField::PAYBOX_CALL_NUMBER,
+        'transaction_number' => \Matthv\PayboxGateway\ResponseField::TRANSACTION_NUMBER,
         // signature should be always last return field
-        'signature' => \Devpark\PayboxGateway\ResponseField::SIGNATURE,
+        'signature' => \Matthv\PayboxGateway\ResponseField::SIGNATURE,
     ],
 
     /*
-     * Those are routes names (not urls) where customer will be redirected after payment. If you 
+     * Those are routes names (not urls) where customer will be redirected after payment. If you
      * want to use custom route with params in url you should set them dynamically when creating
-     * authorization data. You shouldn't change keys here. Those urls will be later launched using 
+     * authorization data. You shouldn't change keys here. Those urls will be later launched using
      * GET HTTP request
      */
     'customer_return_routes_names' => [

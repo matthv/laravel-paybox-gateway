@@ -3,12 +3,12 @@
 namespace Tests\Requests;
 
 use Carbon\Carbon;
-use Devpark\PayboxGateway\Currency;
-use Devpark\PayboxGateway\HttpClient\GuzzleHttpClient;
-use Devpark\PayboxGateway\Requests\Capture;
-use Devpark\PayboxGateway\Responses\Capture as CaptureResponse;
-use Devpark\PayboxGateway\Services\Amount;
-use Devpark\PayboxGateway\Services\ServerSelector;
+use Matthv\PayboxGateway\Currency;
+use Matthv\PayboxGateway\HttpClient\GuzzleHttpClient;
+use Matthv\PayboxGateway\Requests\Capture;
+use Matthv\PayboxGateway\Responses\Capture as CaptureResponse;
+use Matthv\PayboxGateway\Services\Amount;
+use Matthv\PayboxGateway\Services\ServerSelector;
 use Exception;
 use Tests\UnitTestCase;
 use Illuminate\Contracts\Config\Repository as Config;
@@ -154,7 +154,7 @@ class CaptureTest extends UnitTestCase
         $url = $this->request->getUrl();
         $this->assertSame($validUrl, $url);
 
-        // now launch again - server should not be searched one more time but result should be same 
+        // now launch again - server should not be searched one more time but result should be same
         $url = $this->request->getUrl();
         $this->assertSame($validUrl, $url);
     }

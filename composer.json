@@ -1,15 +1,15 @@
 {
-  "name": "devpark/laravel-paybox-gateway",
+  "name": "matthv/laravel-paybox-gateway",
   "description": "Laravel Paybox gateway",
   "require": {
-    "laravel/framework": "5.*",
-    "guzzlehttp/guzzle": "^6.2",
+    "laravel/framework": "^7.0",
+    "guzzlehttp/guzzle": "^6.5",
     "ext-openssl": "*",
     "ext-iconv": "*"
   },
   "autoload": {
     "psr-4": {
-      "Devpark\\PayboxGateway\\": "src/"
+      "Matthv\\PayboxGateway\\": "src/"
     }
   },
   "autoload-dev": {
@@ -17,11 +17,18 @@
       "Tests\\": "tests"
     }
   },
-  "license": "MIT",  
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Matthv\\PayboxGateway\\Providers\\PayboxServiceProvider"
+      ]
+    }
+  },
+  "license": "MIT",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require-dev": {
-    "phpunit/phpunit": "^5.4",
-    "mockery/mockery": "^0.9.5"
+    "phpunit/phpunit": "^8.5",
+    "mockery/mockery": "^1.3"
   }
 }

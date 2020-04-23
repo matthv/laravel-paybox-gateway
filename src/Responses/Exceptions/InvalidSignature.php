@@ -1,6 +1,6 @@
 <?php
 
-namespace Devpark\PayboxGateway\Responses\Exceptions;
+namespace Matthv\PayboxGateway\Responses\Exceptions;
 
 use Exception;
 

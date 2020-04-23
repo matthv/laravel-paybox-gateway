@@ -1,6 +1,6 @@
 <?php
 
-namespace Devpark\PayboxGateway\Services;
+namespace Matthv\PayboxGateway\Services;
 
 use DOMDocument;
 use Exception;

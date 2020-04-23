@@ -2,8 +2,8 @@
 
 namespace Tests\Responses;
 
-use Devpark\PayboxGateway\DirectResponseCode;
-use Devpark\PayboxGateway\Responses\Capture;
+use Matthv\PayboxGateway\DirectResponseCode;
+use Matthv\PayboxGateway\Responses\Capture;
 use Tests\UnitTestCase;
 use Mockery as m;
 

@@ -3,8 +3,8 @@
 namespace Tests\Requests;
 
 use Carbon\Carbon;
-use Devpark\PayboxGateway\Currency;
-use Devpark\PayboxGateway\Language;
+use Matthv\PayboxGateway\Currency;
+use Matthv\PayboxGateway\Language;
 use Tests\Helpers\Authorization as AuthorizationHelper;
 use Tests\UnitTestCase;
 
@@ -259,7 +259,7 @@ class AuthorizationTest extends UnitTestCase
         $url = $this->request->getUrl();
         $this->assertSame($validUrl, $url);
 
-        // now launch again - server should not be searched one more time but result should be same 
+        // now launch again - server should not be searched one more time but result should be same
         $url = $this->request->getUrl();
         $this->assertSame($validUrl, $url);
     }

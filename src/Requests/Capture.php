@@ -1,12 +1,12 @@
 <?php
 
-namespace Devpark\PayboxGateway\Requests;
+namespace Matthv\PayboxGateway\Requests;
 
 use Carbon\Carbon;
-use Devpark\PayboxGateway\HttpClient\GuzzleHttpClient;
-use Devpark\PayboxGateway\Responses\Capture as CaptureResponse;
-use Devpark\PayboxGateway\Services\Amount;
-use Devpark\PayboxGateway\Services\ServerSelector;
+use Matthv\PayboxGateway\HttpClient\GuzzleHttpClient;
+use Matthv\PayboxGateway\Responses\Capture as CaptureResponse;
+use Matthv\PayboxGateway\Services\Amount;
+use Matthv\PayboxGateway\Services\ServerSelector;
 use Exception;
 use Illuminate\Contracts\Config\Repository as Config;
 
