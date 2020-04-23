@@ -1,6 +1,6 @@
 <?php
 
-namespace Devpark\PayboxGateway\Requests;
+namespace Matthv\PayboxGateway\Requests;
 
 class AuthorizationWithCapture extends Authorization
 {

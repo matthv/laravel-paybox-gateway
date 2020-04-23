@@ -1,10 +1,10 @@
 <?php
 
-namespace Devpark\PayboxGateway;
+namespace Matthv\PayboxGateway;
 
 /**
  * Class Language.
- * 
+ *
  * Available Paybox interface languages
  */
 class Language

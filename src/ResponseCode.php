@@ -1,10 +1,10 @@
 <?php
 
-namespace Devpark\PayboxGateway;
+namespace Matthv\PayboxGateway;
 
 /**
  * Class ResponseCode.
- * 
+ *
  * It contains response codes from Paybox System
  */
 class ResponseCode

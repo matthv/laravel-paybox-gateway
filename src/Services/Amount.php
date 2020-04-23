@@ -1,6 +1,6 @@
 <?php
 
-namespace Devpark\PayboxGateway\Services;
+namespace Matthv\PayboxGateway\Services;
 
 class Amount
 {
@@ -14,7 +14,7 @@ class Amount
      */
     public function get($amount, $fill)
     {
-        // if given amount is string without commas or float or int we format it as string with 
+        // if given amount is string without commas or float or int we format it as string with
         // 2 decimal points, otherwise we won't get desired result for integers
         if (mb_strpos($amount, ',') === false) {
             $amount = number_format(round($amount, 2), 2);

@@ -1,6 +1,6 @@
 <?php
 
-namespace Devpark\PayboxGateway;
+namespace Matthv\PayboxGateway;
 
 class ResponseField
 {
