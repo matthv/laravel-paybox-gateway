@@ -11,3 +11,7 @@
 ## 1.2.0 (April 28, 2020)
 
 - update urls paybox
+
+## 1.3.0 (September 17, 2020)
+
+- update version guzzle
